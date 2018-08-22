@@ -7,6 +7,7 @@ class BaseBlockCategory(Slugged):
     """Base Category"""
 
     slug = models.CharField(max_length=2000, blank=True, null=True)
+    level = models.CharField(max_length=2000, blank=True, null=True)
 
     class Meta:
         abstract = True
