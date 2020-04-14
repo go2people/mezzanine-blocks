@@ -12,7 +12,7 @@ class BaseBlock(Slugged):
     """Base Block
     """
     slug = models.CharField(max_length=2000, blank=True, null=True)
-    category = models.ForeignKey(BlockCategory, null=True, blank=True, on_delete=models.CASCADE)
+    category = models.ForeignKey(BlockCategory, verbose_name=_("Category"), null=True, blank=True, on_delete=models.CASCADE)
     login_required = models.BooleanField(_("Login required"), help_text=_("If checked, only logged in users can view this page"), default=False)
     show_title = models.BooleanField(_("Show title"), help_text=_("If checked, show block title"), default=False)
 
@@ -47,10 +47,10 @@ class ImageBlock(BaseBlock, AdminThumbMixin):
     """
     image = FileField(verbose_name=_("Image"), upload_to="images", format="Image", max_length=255, null=True, blank=True)
     description = RichTextField(_("Description"), blank=True, null=True)
-    url = models.URLField(_("External URL"), max_length=255, blank=True, null=True, help_text=_("Optional URL."))
+    url = models.URLField(_("External URL"), max_length=255, blank=True, null=True, help_text=_("Optional URL"))
 
-    height = models.IntegerField(_("Height"), default=100, help_text=_("Height in pixels."))
-    width = models.IntegerField(_("Width"), default=200, help_text=_("Width in pixels."))
+    height = models.IntegerField(_("Height"), default=100, help_text=_("Height in pixels"))
+    width = models.IntegerField(_("Width"), default=200, help_text=_("Width in pixels"))
     quality = models.IntegerField(_("Quality"), default=80)
 
     admin_thumb_field = "image"
