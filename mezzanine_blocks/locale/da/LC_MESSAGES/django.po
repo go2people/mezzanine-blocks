@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-14 16:30+0200\n"
-"PO-Revision-Date: 2020-04-14 16:31+0050\n"
+"POT-Creation-Date: 2020-04-14 16:41+0200\n"
+"PO-Revision-Date: 2020-04-14 16:42+0050\n"
 "Last-Translator: b'Anonymous User <t@tiktuk.net>'\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -37,7 +37,6 @@ msgid "Block cache prefix."
 msgstr "Blok cache prefix"
 
 #: mezzanine_blocks/models.py:15
-#| msgid "Block category"
 msgid "Category"
 msgstr "Kategori"
 
@@ -86,15 +85,17 @@ msgid "External URL"
 msgstr "Ekstern URL"
 
 #: mezzanine_blocks/models.py:50
-msgid "Optional URL."
-msgstr "Valgfri ULR"
+#| msgid "Optional URL."
+msgid "Optional URL"
+msgstr "Valgfri URL"
 
 #: mezzanine_blocks/models.py:52
 msgid "Height"
 msgstr "Højde"
 
 #: mezzanine_blocks/models.py:52
-msgid "Height in pixels."
+#| msgid "Height in pixels."
+msgid "Height in pixels"
 msgstr "Højde i pixels"
 
 #: mezzanine_blocks/models.py:53
@@ -102,7 +103,8 @@ msgid "Width"
 msgstr "Bredde"
 
 #: mezzanine_blocks/models.py:53
-msgid "Width in pixels."
+#| msgid "Width in pixels."
+msgid "Width in pixels"
 msgstr "Bredde i pixels"
 
 #: mezzanine_blocks/models.py:54

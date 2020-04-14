@@ -47,10 +47,10 @@ class ImageBlock(BaseBlock, AdminThumbMixin):
     """
     image = FileField(verbose_name=_("Image"), upload_to="images", format="Image", max_length=255, null=True, blank=True)
     description = RichTextField(_("Description"), blank=True, null=True)
-    url = models.URLField(_("External URL"), max_length=255, blank=True, null=True, help_text=_("Optional URL."))
+    url = models.URLField(_("External URL"), max_length=255, blank=True, null=True, help_text=_("Optional URL"))
 
-    height = models.IntegerField(_("Height"), default=100, help_text=_("Height in pixels."))
-    width = models.IntegerField(_("Width"), default=200, help_text=_("Width in pixels."))
+    height = models.IntegerField(_("Height"), default=100, help_text=_("Height in pixels"))
+    width = models.IntegerField(_("Width"), default=200, help_text=_("Width in pixels"))
     quality = models.IntegerField(_("Quality"), default=80)
 
     admin_thumb_field = "image"
